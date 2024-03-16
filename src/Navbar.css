@@ -1,0 +1,92 @@
+header {
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  background-color: #0190D6;
+  position: fixed;
+  float: right;
+  padding: 10px;
+  width: 100%;
+  z-index: 10;
+  text-align: center; /* Esto centrará el texto dentro del nav */
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  overflow: hidden;
+  margin: 0; /* Elimina el margen predeterminado de la lista */
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+nav li {
+  float: none;
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 10px; /* Añade margen entre los elementos de la lista */
+}
+
+nav li a {
+  display: block;
+  padding: 20px 10px 5px 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav li a:hover {
+  background-color: rgba(0, 57, 137, 0.387);
+  border-radius: 10px;
+  /* text-decoration: underline; */
+}
+
+.banner {
+  width: 100%;
+  /* max-width: 1000px; */ /* Ajusta el ancho máximo según tus necesidades */
+  margin: 20px auto; /* Centra el banner y añade margen arriba y abajo */
+}
+
+.banner img {
+  width: 100%;
+}
+
+.menu-toggle {
+  float: right;
+  cursor: pointer;
+  display: none;
+  padding: 10px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    /* flex-direction: column; */
+    position: absolute;
+    /* top: 30px;
+    left: 0;
+    width: 100%; */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  ul.nav-list {
+    display: none;
+  }
+
+  ul.show {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Añade centrado para la versión móvil */
+  }
+
+  li {
+    float: none;
+    margin: 10px 0; /* Ajusta el margen para la versión móvil */
+  }
+}

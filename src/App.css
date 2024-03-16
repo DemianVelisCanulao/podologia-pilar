@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: rgb(116, 209, 255, 0.1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;;
+}
+
+p{
+  line-height: 2.1rem;
+  font-size:1em;
+  text-align: left;  
+  font-family: 'Rubik', sans-serif 
+}
+
+
+section{
+  text-align: center;
+  width: 100%;
+  
+}
+
+footer{
+  background-color:#04295e;
+  width: 100%;
+  color:#fff;
+  padding: 40px 40px 0 40px;
+}
+
+.section-title{
+  margin: 100px 0px 60px 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.9rem;
+  
+}
+
+
+.panel-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  margin: 20px 300px 10px 300px;
+  border: 0px solid;
+}
+
+/* Start Footer Section */
+
+.contact-section{
+  width: 100%;
+}
+
+.contact-section p{
+  text-align: center;
+}
+
+.contact-title{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+
+.contact-options{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.contact-section i{
+  margin: 9px;
+  font-size: 39px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  margin-right: 2px;
+}
+
+.fa-whatsapp{
+  background-color:#25d366;
+  color:#FFF;
+  text-align:center;
+}
+
+.fa-envelope{
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  background: #0190D6;
+  
+  box-shadow: 0px 3px 10px rgb(0,0,0,.25);
+}
+
+
+
+.fa-whatsapp:hover{
+  color: #04295e;
+}
+
+.fa-envelope:hover{
+  color: #04295e;
+}
+
+.copyright p{
+  text-align: center;
+  color: cadetblue;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* End Footer Section */
+
+@media screen and (max-width: 1800px){
+
+  .panel-body{
+    margin: 10px 20px 120px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section{
+    width: 100%;
+  }
+
+  .panel-body{
+    margin: 10px 20px 120px 20px;
+  }
+
+  .banner {
+    width: 100%;
+    max-width: 760px; /* Puedes ajustar el ancho máximo según tus necesidades */
+    margin-top: 20px; /* Esto establece la altura de la sección para que ocupe toda la ventana */
+  }
+}

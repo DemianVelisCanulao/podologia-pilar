@@ -1,0 +1,30 @@
+.container-experiences{
+    display: flex;
+    gap: 30px;
+}
+
+.box-experience{
+    width: 440px;
+    height: 240px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    will-change: transform;
+    transition: width .3s, height .3s;
+    border-radius: 47px;
+}
+
+.box-experience:hover{
+    width: 500px;
+    height: 250px;
+}
+
+.header-experience{
+    /* border: 3px solid;
+    border-radius: 10px; */
+    background-color: #bdeef8;
+    padding: 15px;
+    
+}
+
+.body-experience{
+    padding: 10px;
+}
